@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(/Users/ck/dev/projects/qlaude/.venv/bin/pip:*)",
+      "Bash(uv pip:*)",
+      "Bash(uv run python:*)"
+    ]
+  }
+}
