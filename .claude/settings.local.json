@@ -3,7 +3,8 @@
     "allow": [
       "Bash(/Users/ck/dev/projects/qlaude/.venv/bin/pip:*)",
       "Bash(uv pip:*)",
-      "Bash(uv run python:*)"
+      "Bash(uv run python:*)",
+      "Bash(git commit:*)"
     ]
   }
 }
