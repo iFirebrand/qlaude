@@ -70,12 +70,21 @@ def stramer():
         messages=messages
     ) as stream:
         for text in stream.text_stream:
+            # to stream token one at a time
             # print(text, end="")
             pass
+    # to get the final msg vs. stream
     print(stream.get_final_message())
 
+def with_assistant_message():
+    messages=[]
+    add_user_message(messages, "Is tea or coffee better at breakfast?")
+    add_assistant_message(messages, "Coffee is better because")
+    answer=chat(messages)
+    print(answer)
 
 if __name__ == "__main__":
     # interactive_chat()
     # tutor()
-    stramer()
+    # stramer()
+    with_assistant_message()
