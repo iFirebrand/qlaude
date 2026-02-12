@@ -92,12 +92,12 @@ def with_stop_sequence():
 
 def structured_output():
     messages=[]
-    add_user_message(messages, "Generate a very short event bridge rule as json")
-    add_assistant_message(messages,"```json" )
-    response = chat(messages, stop_sequences=["```"])
-    # print(response)
-    import json
-    print(json.loads(response.strip()))
+    add_user_message(messages, "Generate three different sample AWS CLI commands. It should be very short.")
+    add_assistant_message(messages,"HEre are all three coammands in a single block without any comments ```bash" )
+    response = chat(messages, stop_sequences=["'command"])
+    print(response)
+    # import json
+    # print(json.loads(response.strip()))
 
 
 if __name__ == "__main__":
