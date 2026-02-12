@@ -18,12 +18,13 @@ def add_assistant_message(messages, text):
 
 system_prompt = """ You are a patient math tutor. Do not directly answer students questions. Guide them to solutions step by step. """
 
-def chat(messages,system=None, temperature=1.0):
+def chat(messages,system=None, temperature=1.0, stop_sequences=[]):
     params = {
         "model": model,
         "max_tokens": 1024,
         "messages": messages,
-        "temperature": temperature
+        "temperature": temperature,
+        "stop_sequences": stop_sequences
     }
 
     if system:
@@ -83,8 +84,15 @@ def with_assistant_message():
     answer=chat(messages)
     print(answer)
 
+def with_stop_sequence():
+    messages=[]
+    add_user_message(messages, "count 1 to 10")
+    answer = chat(messages, stop_sequences=[", 5"])
+    print(answer)
+
 if __name__ == "__main__":
     # interactive_chat()
     # tutor()
     # stramer()
-    with_assistant_message()
+    # with_assistant_message()
+    with_stop_sequence()
