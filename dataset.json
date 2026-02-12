@@ -1,14 +1,49 @@
 [
   {
-    "task": "Extract the AWS region from an S3 bucket URL in the format 's3://bucket-name.region.amazonaws.com/key'",
-    "format": "regex"
+    "prompt_inputs": {
+      "height": "178 cm",
+      "weight": "68 kg",
+      "goal": "Marathon training with carbohydrate-loading for endurance performance",
+      "restrictions": "Lactose intolerance"
+    },
+    "solution_criteria": [
+      "Meal plan includes high-carbohydrate foods appropriate for endurance athlete carb-loading",
+      "All meals and snacks are lactose-free or use lactose-free alternatives",
+      "Plan covers all three meals plus pre/post-workout nutrition for a single day"
+    ],
+    "task_description": "Generate a one-day meal plan for an athlete that meets their dietary restrictions.",
+    "scenario": "Testing with an endurance athlete (marathon runner) needing carbohydrate-loading strategies while accommodating a lactose intolerance restriction"
   },
   {
-    "task": "Parse an AWS CloudWatch log entry and extract the timestamp, log level, and message",
-    "format": "python"
+    "prompt_inputs": {
+      "height": "180",
+      "weight": "82",
+      "goal": "strength training with muscle gain",
+      "restrictions": "seafood allergy, low budget"
+    },
+    "solution_criteria": [
+      "Meal plan avoids all seafood and seafood-derived ingredients",
+      "Protein sources are cost-effective alternatives (eggs, beans, chicken, Greek yogurt, lentils)",
+      "Total daily calories and macronutrients support strength training goals for an 82kg athlete",
+      "All meals and snacks are realistic and practical to prepare"
+    ],
+    "task_description": "Generate a one-day meal plan for an athlete that meets their dietary restrictions.",
+    "scenario": "Testing with a strength-training athlete having a low budget constraint along with a seafood allergy, requiring cost-effective protein alternatives throughout the day"
   },
   {
-    "task": "Create a JSON structure representing an AWS IAM policy that allows read-only access to a specific S3 bucket",
-    "format": "json"
+    "prompt_inputs": {
+      "height": "178",
+      "weight": "75",
+      "goal": "High-performance endurance training with muscle maintenance",
+      "restrictions": "Vegan, gluten-free, tree nut allergy"
+    },
+    "solution_criteria": [
+      "All meals are vegan, gluten-free, and contain no tree nuts",
+      "Plan includes adequate protein (minimum 1.6g per kg body weight) from non-nut plant sources",
+      "Meals provide sufficient carbohydrates for endurance training recovery and energy",
+      "Plan spans a complete day with breakfast, lunch, dinner, and appropriate snacks"
+    ],
+    "task_description": "Generate a one-day meal plan for an athlete that meets their dietary restrictions.",
+    "scenario": "Testing with a professional athlete having multiple dietary restrictions (vegan, gluten-free, and nut allergy) requiring careful nutrient balancing for high-performance needs"
   }
 ]

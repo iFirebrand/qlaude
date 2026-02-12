@@ -1,0 +1,14 @@
+[
+  {
+    "task": "Extract the AWS region from an S3 bucket URL in the format 's3://bucket-name.region.amazonaws.com/key'",
+    "format": "regex"
+  },
+  {
+    "task": "Parse an AWS CloudWatch log entry and extract the timestamp, log level, and message",
+    "format": "python"
+  },
+  {
+    "task": "Create a JSON structure representing an AWS IAM policy that allows read-only access to a specific S3 bucket",
+    "format": "json"
+  }
+]

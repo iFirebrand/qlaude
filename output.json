@@ -1,0 +1,64 @@
+[
+  {
+    "output": "# One-Day Meal Plan for Strength Training & Muscle Gain\n\nHere is a budget-friendly meal plan for an athlete aiming to build muscle through strength training:\n\n* **Calorie Target:** Approximately 2,800 calories\n* **Macronutrient Breakdown:** Protein (175g), Fat (85g), Carbs (350g)\n\n## Meal Plan:\n\n* **Breakfast (7:00 AM):** Oatmeal (100g dry weight) with 2 eggs (100g) scrambled in olive oil (10g). Whole milk (240g).\n  * Protein: 22g, Fat: 16g, Carbs: 50g\n\n* **Mid-Morning Snack (10:00 AM):** Banana (150g) with peanut butter (30g).\n  * Protein: 9g, Fat: 16g, Carbs: 35g\n\n* **Lunch (1:00 PM):** Ground beef (150g, lean) with white rice (150g cooked) and canned beans (100g). Vegetable oil (10g) for cooking.\n  * Protein: 35g, Fat: 18g, Carbs: 65g\n\n* **Pre-Workout Snack (3:30 PM):** White bread (80g) with jam (30g) and honey (15g).\n  * Protein: 5g, Fat: 2g, Carbs: 65g\n\n* **Dinner (7:00 PM):** Chicken breast (180g) with sweet potato (250g) and lentils (80g cooked). Olive oil (8g).\n  * Protein: 50g, Fat: 15g, Carbs: 80g\n\n* **Evening Snack (9:00 PM):** Whole milk (300g) with oats (30g dry weight).\n  * Protein: 14g, Fat: 10g, Carbs: 35g\n\nThis meal plan emphasizes affordable, high-protein sources (chicken, eggs, ground beef, lentils, beans) and complex carbohydrates to support muscle growth and recovery while staying within budget constraints.",
+    "test_case": {
+      "prompt_inputs": {
+        "height": "180",
+        "weight": "82",
+        "goal": "strength training with muscle gain",
+        "restrictions": "seafood allergy, low budget"
+      },
+      "solution_criteria": [
+        "Meal plan avoids all seafood and seafood-derived ingredients",
+        "Protein sources are cost-effective alternatives (eggs, beans, chicken, Greek yogurt, lentils)",
+        "Total daily calories and macronutrients support strength training goals for an 82kg athlete",
+        "All meals and snacks are realistic and practical to prepare"
+      ],
+      "task_description": "Generate a one-day meal plan for an athlete that meets their dietary restrictions.",
+      "scenario": "Testing with a strength-training athlete having a low budget constraint along with a seafood allergy, requiring cost-effective protein alternatives throughout the day"
+    },
+    "score": 7,
+    "reasoning": "The solution meets all mandatory requirements: it includes daily caloric total (2,800), complete macronutrient breakdown, and all meals with exact foods, portions, and timing. It successfully avoids seafood, uses budget-friendly protein sources, and provides realistic, practical meals. However, there are minor issues with caloric adequacy for the athlete's profile and some calculation inconsistencies between stated and actual macronutrient totals. The pre-workout snack composition could be optimized. These are secondary criterion deficiencies rather than mandatory requirement violations."
+  },
+  {
+    "output": "# One-Day Meal Plan for Marathon Training with Carbohydrate-Loading\n\nHere is a specialized nutrition plan for an athlete preparing for marathon endurance performance:\n\n* **Calorie Target:** Approximately 3,000 calories\n* **Macronutrient Breakdown:** Protein (102g), Fat (75g), Carbs (450g)\n\n## Meal Plan:\n\n* **Breakfast (7:00 AM):** Oatmeal (100g dry weight) with banana (150g), honey (20g), and coconut oil (15g). Orange juice (250ml).\n  * Protein: 12g, Fat: 18g, Carbs: 95g\n\n* **Mid-Morning Snack (10:00 AM):** Rice cakes (50g) with almond butter (25g) and dates (40g).\n  * Protein: 8g, Fat: 12g, Carbs: 60g\n\n* **Lunch (1:00 PM):** Grilled chicken breast (140g), white rice (150g cooked), steamed carrots (100g), and olive oil (10ml). Green salad with lemon dressing (100g mixed greens).\n  * Protein: 38g, Fat: 15g, Carbs: 110g\n\n* **Afternoon Snack (4:00 PM):** Energy bar (60g - dairy-free), apple (180g), and coconut water (200ml).\n  * Protein: 8g, Fat: 8g, Carbs: 80g\n\n* **Dinner (7:00 PM):** Baked salmon (130g), sweet potato (250g), steamed broccoli (150g), and olive oil (10ml).\n  * Protein: 28g, Fat: 15g, Carbs: 85g\n\n* **Evening Snack (9:00 PM):** Rice cakes (40g) with jam (30g) and almonds (20g).\n  * Protein: 8g, Fat: 7g, Carbs: 50g\n\nThis plan emphasizes **high-quality carbohydrates** for glycogen loading, adequate protein for muscle recovery, and **lactose-free options** throughout. All foods support sustained energy for marathon training endurance.",
+    "test_case": {
+      "prompt_inputs": {
+        "height": "178 cm",
+        "weight": "68 kg",
+        "goal": "Marathon training with carbohydrate-loading for endurance performance",
+        "restrictions": "Lactose intolerance"
+      },
+      "solution_criteria": [
+        "Meal plan includes high-carbohydrate foods appropriate for endurance athlete carb-loading",
+        "All meals and snacks are lactose-free or use lactose-free alternatives",
+        "Plan covers all three meals plus pre/post-workout nutrition for a single day"
+      ],
+      "task_description": "Generate a one-day meal plan for an athlete that meets their dietary restrictions.",
+      "scenario": "Testing with an endurance athlete (marathon runner) needing carbohydrate-loading strategies while accommodating a lactose intolerance restriction"
+    },
+    "score": 7,
+    "reasoning": "The solution successfully meets all three mandatory requirements with a clearly stated daily caloric total, complete macronutrient breakdown, and six meals/snacks with exact foods, portions, and specific timing. The lactose-free restriction is perfectly maintained throughout. The carbohydrate-loading approach is well-designed for endurance athletes. However, the solution has two notable deficiencies: (1) it doesn't explicitly address pre/post-workout nutrition timing as requested in the secondary criteria, and (2) there are minor mathematical inconsistencies in the macronutrient totals. These are secondary criterion issues rather than mandatory requirement violations, placing the solution in the 7-8 range rather than 9-10."
+  },
+  {
+    "output": "# One-Day Meal Plan for High-Performance Endurance Training with Muscle Maintenance\n\n* **Calorie Target:** Approximately 2,800 calories\n* **Macronutrient Breakdown:** Protein (105g), Fat (78g), Carbs (385g)\n\n## Meal Plan:\n\n* **Breakfast (7:00 AM):** Oatmeal (80g dry weight) with banana (120g), sunflower seed butter (25g), and coconut milk (240ml).\n    * Protein: 12g, Fat: 12g, Carbs: 70g\n\n* **Mid-Morning Snack (10:00 AM):** Rice cakes (40g) with tahini (20g) and dates (50g).\n    * Protein: 6g, Fat: 10g, Carbs: 50g\n\n* **Lunch (1:00 PM):** Lentil and vegetable stir-fry with brown rice (100g cooked), lentils (150g cooked), broccoli (150g), carrots (80g), and olive oil (15ml).\n    * Protein: 18g, Fat: 8g, Carbs: 85g\n\n* **Afternoon Snack (4:00 PM):** Smoothie with plant-based protein powder (30g), oat milk (250ml), mango (150g), and pumpkin seeds (20g).\n    * Protein: 20g, Fat: 8g, Carbs: 55g\n\n* **Dinner (7:00 PM):** Baked tofu (180g) with quinoa (80g cooked), roasted sweet potato (200g), and steamed green beans (150g) with coconut oil (10ml).\n    * Protein: 20g, Fat: 12g, Carbs: 80g\n\n* **Evening Snack (9:00 PM):** Hummus (50g) with carrot sticks (100g) and gluten-free crackers (30g).\n    * Protein: 9g, Fat: 6g, Carbs: 30g\n\nThis plan supports endurance performance with adequate carbohydrates for fuel, sufficient protein for muscle maintenance, and healthy fats for recovery. All foods meet vegan, gluten-free, and tree nut-free requirements.",
+    "test_case": {
+      "prompt_inputs": {
+        "height": "178",
+        "weight": "75",
+        "goal": "High-performance endurance training with muscle maintenance",
+        "restrictions": "Vegan, gluten-free, tree nut allergy"
+      },
+      "solution_criteria": [
+        "All meals are vegan, gluten-free, and contain no tree nuts",
+        "Plan includes adequate protein (minimum 1.6g per kg body weight) from non-nut plant sources",
+        "Meals provide sufficient carbohydrates for endurance training recovery and energy",
+        "Plan spans a complete day with breakfast, lunch, dinner, and appropriate snacks"
+      ],
+      "task_description": "Generate a one-day meal plan for an athlete that meets their dietary restrictions.",
+      "scenario": "Testing with a professional athlete having multiple dietary restrictions (vegan, gluten-free, and nut allergy) requiring careful nutrient balancing for high-performance needs"
+    },
+    "score": 9,
+    "reasoning": "The solution comprehensively meets all mandatory requirements with precise daily caloric total, detailed macronutrient breakdown, and complete meal specifications with portions and timing. All secondary criteria are satisfied: dietary restrictions are strictly adhered to (vegan, gluten-free, tree nut-free), protein exceeds minimum requirements from appropriate plant sources, and carbohydrates are sufficient for endurance training. The plan spans a full day with six eating occasions appropriately distributed. Minor weaknesses exist in training-specific optimization (meal timing relative to workouts) and lack of hydration guidance, but these do not constitute failures against the stated criteria. The solution is well-structured, practical, and directly addresses the task requirements."
+  }
+]
