@@ -5,7 +5,7 @@ import anthropic
 load_dotenv()
 
 client = anthropic.Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
-
+model = "claude-haiku-4-5-20251001"
 
 def add_user_message(messages, text):
     user_message = {"role": "user", "content": text}
@@ -20,7 +20,7 @@ system_prompt = """ You are a patient math tutor. Do not directly answer student
 
 def chat(messages,system=None, temperature=1.0):
     params = {
-        "model": "claude-haiku-4-5-20251001",
+        "model": model,
         "max_tokens": 1024,
         "messages": messages,
         "temperature": temperature
@@ -53,9 +53,29 @@ def interactive_chat():
         print(answer)
         print("---")
 
-
+def stramer():
+    messages = []
+    add_user_message(messages, "Write a 1 sentence description of a fake database")
+    # stream = client.messages.create(
+    #     model=model,
+    #     max_tokens = 1000,
+    #     messages=messages,
+    #     stream=True
+    # )
+    # for event in stream:
+    #     print(event)
+    with client.messages.stream(
+        model=model,
+        max_tokens=1000,
+        messages=messages
+    ) as stream:
+        for text in stream.text_stream:
+            # print(text, end="")
+            pass
+    print(stream.get_final_message())
 
 
 if __name__ == "__main__":
-    interactive_chat()
+    # interactive_chat()
     # tutor()
+    stramer()
