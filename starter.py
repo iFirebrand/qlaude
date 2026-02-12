@@ -90,9 +90,20 @@ def with_stop_sequence():
     answer = chat(messages, stop_sequences=[", 5"])
     print(answer)
 
+def structured_output():
+    messages=[]
+    add_user_message(messages, "Generate a very short event bridge rule as json")
+    add_assistant_message(messages,"```json" )
+    response = chat(messages, stop_sequences=["```"])
+    # print(response)
+    import json
+    print(json.loads(response.strip()))
+
+
 if __name__ == "__main__":
     # interactive_chat()
     # tutor()
     # stramer()
     # with_assistant_message()
-    with_stop_sequence()
+    # with_stop_sequence()
+    structured_output()
